@@ -10,12 +10,12 @@ Is that really useful? I need it for a project, so, yes, at least to someone. ðŸ
 
 In the project you want to use it, you first:
 
-0. `npm i @cospaia/prettier-plugin-clojure`
+0. `npm i prettier @cospaia/prettier-plugin-clojure`
 
 Then you can do things like:
 
 ```sh
-$ prettier --plugin @cospaia/prettier-plugin-clojure <file>
+$ npx prettier <clojure-file | markdown-file-w-fenced-clojure-block>
 ```
 
 ## Testing it
