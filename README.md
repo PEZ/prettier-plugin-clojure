@@ -14,8 +14,15 @@ In the project you want to use it, you first:
 
 Then you can do things like:
 
-```sh
+``` sh
 $ npx prettier <clojure-file | markdown-file-w-fenced-clojure-block>
+```
+
+e.g:
+
+```
+$ npx prettier ./test-data/some_code.clj
+$ npx prettier ./test-data/some-fenced-code.md
 ```
 
 ## Testing it
@@ -24,14 +31,20 @@ In this project:
 
 0. `npm i`
 0. `npm run builddist`
-0. `npx prettier --plugin . ./test-data/some_code.clj
-0. `npx prettier --plugin . ./test-data/some-fenced-code.md
+0. `npx prettier --plugin . ./test-data/some_code.clj`
+0. `npx prettier --plugin . ./test-data/some-fenced-code.md`
 
 See also [the test project](./prettier-clojure-test-project/).
 
 ## Author
 
 Peter Strömberg, aka [PEZ](https://github.com/PEZ)
+
+## Built with
+
+* [ClojureScript](https://clojurescript.org)
+* [shadow-cljs](https://github.com/thheller/shadow-cljs)
+* [cljfmt](https://github.com/weavejester/cljfmt)
 
 ## LICENSE
 
