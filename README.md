@@ -1,6 +1,6 @@
 # @cospaia/prettier-plugin-clojure
 
-An indentation-only (almost), non-configurable, [Prettier](https://prettier.io/) Plugin for [Clojure](https://clojure.org) and [ClojureScript](https://clojurescript.org) (and any sufficiently similar implementations).
+An (almost) indentation-only, non-configurable, [Prettier](https://prettier.io/) Plugin for [Clojure](https://clojure.org) and [ClojureScript](https://clojurescript.org) (and any sufficiently similar implementations).
 
 The plugin really is basic. It will format the code using [cljfmt](https://github.com/weavejester/cljfmt) defaults, without letting you configure anything. This means that mostly indentation will be applied, but there is also some folding of the bracket trail and trimming of whitespace inside the brackets, going on.
 
