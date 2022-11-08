@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.cpcache/
+.shadow-cljs/
+.lsp/.cache/
+.clojure-lsp/.cache/
+.calva/output-window/output.calva-repl
+cljs-out/
+*.tgz

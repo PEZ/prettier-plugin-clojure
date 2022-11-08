@@ -1,0 +1,4 @@
+{
+  "plugins": ["@cospaia/prettier-plugin-clojure"],
+  "pluginSearchDirs": ["node_modules"]
+}

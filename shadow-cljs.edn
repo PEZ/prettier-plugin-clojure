@@ -1,0 +1,12 @@
+{:deps true
+
+ :builds {:formatter-lib
+          {:target    :node-library
+           :exports   {:formatText pez.formatter/format-text-bridge}
+           :output-to "cljs-out/formatter-lib.js"
+           :devtools {:enabled false}}
+          :test
+          {:target    :node-test
+           :output-to "cljs-out/test/formatter-lib-tests.js"
+           :ns-regexp "-test$"
+           :autorun   true}}}

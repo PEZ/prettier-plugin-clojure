@@ -1,0 +1,5 @@
+{
+  "clojure.format.enable": false,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+}

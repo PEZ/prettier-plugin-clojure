@@ -1,0 +1,13 @@
+# Put everything on the blacklist by default
+*
+*/**
+**/.DS_Store
+*/**/.DS_Store
+
+# Whitelist
+!example.clj
+!dist/**
+!package.json
+!package-lock.json
+!README.md
+!LICENCE

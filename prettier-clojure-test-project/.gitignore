@@ -1,0 +1,5 @@
+.cpcache/
+.portal/vscode.edn
+.lsp/.cache/
+.clojure-lsp/.cache/
+.calva/output-window/output.calva-repl
