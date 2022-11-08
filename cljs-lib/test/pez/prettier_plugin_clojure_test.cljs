@@ -1,6 +1,6 @@
-(ns pez.formatter-test
+(ns pez.prettier-plugin-clojure-test
   (:require [clojure.test :refer [deftest is]]
-            [pez.formatter :as sut]))
+            [pez.prettier-plugin-clojure :as sut]))
 
 (deftest format-text
   (is (= "(foo\n bar)"

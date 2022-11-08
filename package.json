@@ -11,7 +11,9 @@
     "clojure",
     "clojurescript",
     "plugin",
-    "cljfmt"
+    "cljfmt",
+    "formatting",
+    "indentation"
   ],
   "author": {
     "name": "Peter Strömberg",
@@ -22,7 +24,7 @@
     "url": "https://github.com/PEZ/prettier-plugin-clojure/issues"
   },
   "homepage": "https://github.com/PEZ/prettier-plugin-clojure#readme",
-  "main": "dist/js/index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "prettier": "^2.7.1"
   },
@@ -31,9 +33,9 @@
     "source-map-support": "^0.5.21"
   },
   "scripts": {
-    "builddev": "shadow-cljs compile :formatter-lib :test",
+    "builddev": "shadow-cljs compile :plugin :test",
     "test": "npm run builddev",
-    "builddist": "shadow-cljs release :formatter-lib :test && mkdir -p dist/cljs-out && mkdir -p dist/js && cp src/index.js dist/js && cp cljs-out/formatter-lib.js dist/cljs-out/formatter-lib.js",
+    "builddist": "shadow-cljs release :plugin :test",
     "example": "prettier --plugin . prettier-clojure-example-project/src/example.clj",
     "prepack": "npm run builddist"
   }

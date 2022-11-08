@@ -1,4 +1,4 @@
-const formatter = require('../cljs-out/formatter-lib')
+const formatter = require('../cljs-out/prettier-plugin-clojure')
 
 const languages = [
   {

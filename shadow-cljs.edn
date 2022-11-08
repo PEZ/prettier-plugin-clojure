@@ -1,12 +1,13 @@
 {:deps true
 
- :builds {:formatter-lib
+ :builds {:plugin
           {:target    :node-library
-           :exports   {:formatText pez.formatter/format-text-bridge}
-           :output-to "cljs-out/formatter-lib.js"
-           :devtools {:enabled false}}
+           :exports   {:languages pez.prettier-plugin-clojure/languages
+                       :parsers pez.prettier-plugin-clojure/parsers
+                       :printers pez.prettier-plugin-clojure/printers}
+           :output-to "dist/index.js"}
           :test
           {:target    :node-test
-           :output-to "cljs-out/test/formatter-lib-tests.js"
+           :output-to "cljs-out/test/formatter-tests.js"
            :ns-regexp "-test$"
            :autorun   true}}}
