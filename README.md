@@ -24,8 +24,8 @@ In this project:
 
 0. `npm i`
 0. `npm run builddist`
-0. `prettier --plugin . ./prettier-clojure-test-project/src/some_code.clj
-0. `prettier --plugin . ./prettier-clojure-test-project/some-fenced-code.md
+0. `npx prettier --plugin . ./test-data/some_code.clj
+0. `npx prettier --plugin . ./test-data/some-fenced-code.md
 
 See also [the test project](./prettier-clojure-test-project/).
 
