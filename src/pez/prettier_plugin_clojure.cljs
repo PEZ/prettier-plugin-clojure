@@ -13,13 +13,13 @@
 (def ^js languages
   (clj->js [{:extensions [".clj", ".cljs", ".cljc", ".edn", ".bb"],
              :name "Clojure",
-             :parsers [:clj-parse]}]))
+             :parsers [:clojure]}]))
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (def ^js parsers
-  (clj->js {:clj-parse {:parse (fn [text] [text])
-                        :astFormat :clj-string}}))
+  (clj->js {:clojure {:parse (fn [text] [text])
+                      :astFormat :clojure}}))
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (def ^js printers
-  (clj->js {:clj-string {:print print-clojure}}))
+  (clj->js {:clojure {:print print-clojure}}))

@@ -1,6 +1,6 @@
 {
   "name": "@cospaia/prettier-plugin-clojure",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prettier Plugin for Clojure. Indentation only, and non-configurable",
   "repository": {
     "type": "git",
